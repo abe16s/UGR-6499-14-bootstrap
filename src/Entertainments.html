@@ -5,288 +5,298 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Entertainments</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Resume.html">Resume</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
+            <nav class="border-bottom border-3 border-light d-flex justify-content-center px-5 flex-column flex-lg-row bg-dark text-light py-3 position-relative row-gap-3">
+                <ul class="list-unstyled align-items-center justify-content-around flex-column flex-lg-row row-gap-3 d-lg-flex d-none w-100 navbar-menu mb-0">
+                    <li><a href="Home.html" class="text-light fs-5 text-decoration-none">Home</a></li>
+                    <li><a href="Resume.html" class="text-light fs-5 text-decoration-none">Resume</a></li>
+                    <li><a href="Projects.html" class="text-light fs-5 text-decoration-none">Projects</a></li>
                 </ul>
-                <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo" class="logo"></a>  
-                <ul >
-                    <li><a href="Adventure.html">Adventure</a></li>
-                    <li><a href="Entertainments.html" class="current">Entertainments</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>       
+                <div class="d-flex justify-content-between align-items-center order-first col-lg-1 order-lg-0">
+                    <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo" class="col-lg-12 col-2 rounded-circle"></a>  
+                    <i class="fa-solid fa-bars text-light fs-4 d-lg-none" id="navbar-burger"></i>
+                    <i class="fa-solid fa-x text-light fs-4 d-lg-none d-none" id="navbar-burger--close"></i>
+                </div>
+                <ul class="list-unstyled align-items-center justify-content-around flex-column flex-lg-row row-gap-3 d-lg-flex d-none w-100 navbar-menu mb-0">
+                    <li><a href="Adventure.html" class="text-light fs-5 text-decoration-none">Adventure</a></li>
+                    <li><a href="Entertainments.html" class="text-light fs-5">Entertainments</a></li>
+                    <li><a href="Contact.html" class="text-light fs-5 text-decoration-none">Contact</a></li>
+                </ul>    
+            </nav>     
+            <script src="js/navbar.js"></script>    
         </header>
         <main>
-            <hgroup id="about">
+            <hgroup class="d-flex flex-column bg-dark text-white position-relative px-5 justify-content-center p-5">
                 <h1>My Entertainments</h1>
                 <p>When I get some free time or when I get bored or for whatever reason, I've some entertaining activities that got me covered. Starting from listening music in day to day activity to watching football games in the weekend, I have many entertainment alternatives that take my mind off the stressing and continuous school life and give me some relief.</p>
             </hgroup>
-            <section id="music">
-                <hgroup>
-                    <h2>Music</h2>
+            <section class="bg-dark text-light p-5 col-11 my-4 mx-auto">
+                <hgroup class="mb-2">
+                    <h2 class="text-decoration-underline">Music</h2>
                     <p>My first and foremost thing that I love to do is listen to music and get lost in the melody and rhythm. I listen to music in my all activities whether it is studying, walking or whatever, I enjoy music as much as I can because it gives a feeling of joy. Music also helps me get through tough times when I'm in bad mood, music never fails to cheer me up and its then when I found myself lost in the lyrics of songs. Music is just the soundtrack of my life. I enjoy all kinds of music but I like mostly PopRock, <abbr title="Electronic Dance Music">EDM</abbr>, Ethiopian Reggae and Pop.</p>
                 </hgroup>
                 <p>I listen to all kinds of songs & artists from OneRepublic, Kygo, Sia, Coldplay, Imagine Dragons and some Macklemore but here are some of my favorite artists and songs that I like very much.</p>
-                <div id="music-artists">
-                    <section class="artist">
+                <div class="row justify-content-center gap-5 p-md-5 p-2 my-4 mx-auto bg-dark-subtle">
+                    <section class="p-3 bg-dark text-light text-center col-10 col-md-5 col-lg-3 rounded-1">
                         <h4>OneRepublic</h4>
-                        <img src="images/OneRepublic.jpg" alt="PopRock band OneRepublic members photo">
-                        <p>One of my favorite artist is an American PopRock Band <a href="https://www.onerepublic.com/">OneRepublic</a>. Their music gives me a feelings that I just can't express. The lyrics in there songs just give me hope and joy every time I here it.</p>
-                        <p>You can listen and follow them on:</p>
-                        <div class="listen">
-                            <a href="https://www.youtube.com/user/onerepublicvevo" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://open.spotify.com/artist/5Pwc4xIPtQLFEnJriah9YJ" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-                            <a href="https://music.apple.com/us/artist/onerepublic/260414340" target="_blank"><i class="fa-brands fa-apple"></i></a>
-                            <a href="https://www.instagram.com/onerepublic/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/OneRepublic" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/OneRepublic" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                        </div>
-                        <div class="songs">
+                        <img class="w-100 rounded mb-3" src="images/OneRepublic.jpg" alt="PopRock band OneRepublic members photo">
+                        <p>One of my favorite artist is an American PopRock Band <a href="https://www.onerepublic.com/" target="_blank" class="text-light fw-semibold">OneRepublic</a>. Their music gives me a feelings that I just can't express. The lyrics in there songs just give me hope and joy every time I here it.</p>
+                        <div>
                             <p>Here are my top 3 songs from them.</p>
                             <p>OneRepublic - Counting Stars</p>
-                            <audio controls preload="none" title="OneRepublic - Counting Stars">
+                            <audio class="w-100" controls preload="none" title="OneRepublic - Counting Stars">
                                 <source src="Resources/OneRepublic_-_Counting_Stars.mp3">
                                 Your browser does not support the audio element. You can find the song <a href="https://youtu.be/hT_nvWreIhg?si=lo1jy5gHwLi4xQPw" target="_blank">here.</a>
                             </audio>
                             <p>OneRepublic - Good Life</p>
-                            <audio controls preload="none" title="OneRepublic - Good Life">
+                            <audio class="w-100" controls preload="none" title="OneRepublic - Good Life">
                                 <source src="Resources/OneRepublic_-_Good_Life.mp3">
                                 Your browser does not support the audio element. You can find the song <a href="https://youtu.be/jZhQOvvV45w?si=5ssZPz28hKn3wdvs" target="_blank">here.</a>
                             </audio>
                             <p>OneRepublic - Wherever I Go</p>
-                            <audio controls preload="none" title="OneRepublic - Wherever I Go">
+                            <audio class="w-100" controls preload="none" title="OneRepublic - Wherever I Go">
                                 <source src="Resources/OneRepublic_-_Wherever_I_Go.mp3">
                                 Your browser does not support the audio element. You can find the song <a href="https://youtu.be/OXWrjWDQh7Q?si=m7gUZkQHbFOi6QgU" target="_blank">here.</a>
                             </audio>
                         </div>
-                    </section>
-                    <section class="artist">
-                        <h4>Avicii</h4>
-                        <img src="images/Avicii.jpg" alt="Swedish EDM artist Avicii">
-                        <p>One of the reasons that I fall in love in love with <abbr title="Electronic Dance Music">EDM</abbr> is because of <a href="https://avicii.com/"  target="_blank">Avicii</a> born Tim Bergling. In the short life of his, he made many songs that I admire the most and that I hold dear in my heart. May he rest in peace, his music and his memories are forever.</p>
                         <p>You can listen and follow them on:</p>
-                        <div class="listen">
-                            <a href="https://www.youtube.com/user/AviciiOfficialVEVO" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6?si=IYzh3XGLTo2t_CzCMTro0g&nd=1&dlsi=b09bc098593e416c" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-                            <a href="https://music.apple.com/ca/artist/avicii/298496035" target="_blank"><i class="fa-brands fa-apple"></i></a>
-                            <a href="https://www.instagram.com/avicii/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/avicii" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/Avicii" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <div class="d-flex justify-content-around my-3 mx-auto col-11 fs-3">
+                            <a href="https://www.youtube.com/user/onerepublicvevo" target="_blank"><i class="fa-brands fa-youtube text-light"></i></a>
+                            <a href="https://open.spotify.com/artist/5Pwc4xIPtQLFEnJriah9YJ" target="_blank"><i class="fa-brands fa-spotify text-light"></i></a>
+                            <a href="https://music.apple.com/us/artist/onerepublic/260414340" target="_blank"><i class="fa-brands fa-apple text-light"></i></a>
+                            <a href="https://www.instagram.com/onerepublic/" target="_blank"><i class="fa-brands fa-instagram text-light"></i></a>
+                            <a href="https://www.facebook.com/OneRepublic" target="_blank"><i class="fa-brands fa-facebook-f text-light"></i></a>
+                            <a href="https://twitter.com/OneRepublic" target="_blank"><i class="fa-brands fa-x-twitter text-light"></i></a>
                         </div>
-                        <div class="songs">
+                    </section>
+                    <section class="p-3 bg-dark text-light text-center col-10 col-md-5 col-lg-3 rounded-1">
+                        <h4>Avicii</h4>
+                        <img class="w-100 rounded mb-3" src="images/Avicii.jpg" alt="Swedish EDM artist Avicii">
+                        <p>One of the reasons that I fall in love in love with <abbr title="Electronic Dance Music">EDM</abbr> is because of <a href="https://avicii.com/"  target="_blank" class="text-light fw-semibold">Avicii</a> born Tim Bergling. In the short life of his, he made many songs that I admire the most and that I hold dear in my heart. May he rest in peace, his music and his memories are forever.</p>
+                        <div>
                             <p>Here are my top 3 songs from him.</p>
                             <p>Avicii - Hey Brother</p>
-                            <audio controls preload="none" title="Avicii - Hey Brother">
+                            <audio class="w-100" controls preload="none" title="Avicii - Hey Brother">
                                 <source src="Resources/Avicii_-_Hey_Brother.mp3">
                                 Your browser does not support the audio element. You can find the song <a href="https://youtu.be/6Cp6mKbRTQY?si=Vu8rqHPH467JmqX5" target="_blank">here.</a>
                             </audio>
                             <p>Avicii - Waiting For Love</p>
-                            <audio controls preload="none" title="Avicii - Waiting For Love">
+                            <audio class="w-100" controls preload="none" title="Avicii - Waiting For Love">
                                 <source src="Resources/Avicii_-_Waiting_For_Love.mp3">
                                 Your browser does not support the audio element. You can find the song <a href="https://youtu.be/cHHLHGNpCSA?si=K_j6vI-NsUOgcK_E" target="_blank">here.</a>
                             </audio>    
                             <p>Avicii - Wake Me Up</p>
-                            <audio controls preload="none" title="Avicii - Wake Me Up">
+                            <audio class="w-100" controls preload="none" title="Avicii - Wake Me Up">
                                 <source src="Resources/Avicii_-_Wake_Me_Up.mp3">
                                 Your browser does not support the audio element. You can find the song <a href="https://youtu.be/IcrbM1l_BoI?si=ZC6YuSDncAM0_hEg" target="_blank">here.</a>
                             </audio>
                         </div>
-                    </section>
-                    <section class="artist">
-                        <h4>Teddy Afro</h4>
-                        <img src="images/Teddy_Afro.jpg" alt="Ethiopian Singer Teddy Afro">
-                        <p>My favorite Ethiopian singer is <a href="https://teddyafro.info/">Teddy Afro</a> born Tewodros Kassahun. His lyrically and melodically great songs are just the best.</p>
-                        <div class="listen">
-                            <p>You can listen and follow him on:</p>
-                            <a href="https://www.youtube.com/channel/UCydlocDyvRtFmMffKytKqgQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://open.spotify.com/artist/08oMhAUN23C91R1zltrR6p" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-                            <a href="https://music.apple.com/us/artist/teddy-afro/457707367" target="_blank"><i class="fa-brands fa-apple"></i></a>
-                            <a href="https://www.instagram.com/teddyafromuzika/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/TeddyAfroMusic/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/teddyafromusic" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <p>You can listen and follow him on:</p>
+                        <div class="d-flex justify-content-around my-3 mx-auto col-11 fs-3">
+                            <a href="https://www.youtube.com/user/AviciiOfficialVEVO" target="_blank"><i class="fa-brands fa-youtube text-light"></i></a>
+                            <a href="https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6?si=IYzh3XGLTo2t_CzCMTro0g&nd=1&dlsi=b09bc098593e416c" target="_blank"><i class="fa-brands fa-spotify text-light"></i></a>
+                            <a href="https://music.apple.com/ca/artist/avicii/298496035" target="_blank"><i class="fa-brands fa-apple text-light"></i></a>
+                            <a href="https://www.instagram.com/avicii/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram text-light"></i></a>
+                            <a href="https://www.facebook.com/avicii" target="_blank"><i class="fa-brands fa-facebook-f text-light"></i></a>
+                            <a href="https://twitter.com/Avicii" target="_blank"><i class="fa-brands fa-x-twitter text-light"></i></a>
                         </div>
-                        <div class="songs">
+                    </section>
+                    <section class="p-3 bg-dark text-light text-center col-10 col-md-5 col-lg-3 rounded-1">
+                        <h4>Teddy Afro</h4>
+                        <img class="w-100 rounded mb-3" src="images/Teddy_Afro.jpg" alt="Ethiopian Singer Teddy Afro">
+                        <p>My favorite Ethiopian singer is <a href="https://teddyafro.info/" target="_blank" class="text-light fw-semibold">Teddy Afro</a> born Tewodros Kassahun. His lyrically and melodically great songs are just the best.</p>
+                        <div>
                             <p>Here are my top 3 songs from him.</p>
                             <p>Teddy Afro - Tenanekegn Enba</p>
-                            <audio controls preload="none" title="Teddy Afro - Tenanekegn Enba">
+                            <audio class="w-100" controls preload="none" title="Teddy Afro - Tenanekegn Enba">
                                 <source src="Resources/Teddy_Afro_-_Tenanekegn_Enba.mp3">
                                 Your browser does not support the audio element. You can find the song <a href="https://youtu.be/3gQRLQBRIfA?si=J77waw-3kXb8ZaBr" target="_blank">here.</a>
                             </audio>
                             <p>Teddy Afro - Des Yemil Sikay</p>
-                            <audio controls preload="none" title="Teddy Afro - Des Yemil Sikay">
+                            <audio class="w-100" controls preload="none" title="Teddy Afro - Des Yemil Sikay">
                                 <source src="Resources/Teddy_Afro_-_Des_Yemil_Sikay.mp3">
                                 Your browser does not support the audio element. You can find the song <a href="https://youtu.be/vgjYg8NUmQ8?si=zcd3CLY2jxvRK2WY" target="_blank">here.</a>
                             </audio>
                             <p>Teddy Afro - Selame (Bado)</p>
-                            <audio controls preload="none" title="Teddy Afro - Selame (Bado)">
+                            <audio class="w-100" controls preload="none" title="Teddy Afro - Selame (Bado)">
                                 <source src="Resources/Teddy_Afro_-_Selame(Bado).mp3">
                                 Your browser does not support the audio element. You can find the song <a href="https://youtu.be/IWI95ZGpSmE?si=m1XUHaXqAl_ikZio" target="_blank">here.</a>
                             </audio>
                         </div>
+                        <p>You can listen and follow him on:</p>
+                        <div class="d-flex justify-content-around my-3 mx-auto col-11 fs-3">
+                            <a href="https://www.youtube.com/channel/UCydlocDyvRtFmMffKytKqgQ" target="_blank"><i class="fa-brands fa-youtube text-light"></i></a>
+                            <a href="https://open.spotify.com/artist/08oMhAUN23C91R1zltrR6p" target="_blank"><i class="fa-brands fa-spotify text-light"></i></a>
+                            <a href="https://music.apple.com/us/artist/teddy-afro/457707367" target="_blank"><i class="fa-brands fa-apple text-light"></i></a>
+                            <a href="https://www.instagram.com/teddyafromuzika/" target="_blank"><i class="fa-brands fa-instagram text-light"></i></a>
+                            <a href="https://www.facebook.com/TeddyAfroMusic/" target="_blank"><i class="fa-brands fa-facebook-f text-light"></i></a>
+                            <a href="https://twitter.com/teddyafromusic" target="_blank"><i class="fa-brands fa-x-twitter text-light"></i></a>
+                        </div>
                     </section>
                 </div>
-                <div id="music-videos">
-                    <p>Here are my favorite music videos</p>
-                    <video controls>
-                        <source src="Resources/OneRepublic_-_Counting_Stars.mp4">
-                    Your browser does not support the video tag. 
-                    </video>
-                    <a href="https://youtu.be/hT_nvWreIhg?si=6DT9jukoy2hoDIfd" target="_blank">OneRepublic - Counting Stars</a>
-                    <video controls>
-                        <source src="Resources/MACKLEMORE_FEAT_SKYLAR_GREY_-_GLORIOUS.mp4">
-                    Your browser does not support the video tag. 
-                    </video>
-                    <a href="https://youtu.be/7OrLroFa0AI?si=lOrUrJRn-ttNqSpX" target="_blank">Macklemore ft Skylar Grey- Glorious</a>
-                </div>
+                <div class="p-md-5 text-center row gap-4 justify-content-center">
+                    <p class="fw-semibold fs-5 w-100">Here are my favorite music videos</p>
+                    <div class="col-11 col-lg-5">
+                        <video class="w-100" controls>
+                            <source src="Resources/Coldplay_-_Up&Up.mp4">
+                        Your browser does not support the video tag. 
+                        </video>
+                        <a href="https://youtu.be/BPNTC7uZYrI?si=SQUIkag5q7K10A_W" target="_blank" class="text-light">Coldplay - Up&Up</a>
+                    </div>
+                    <div class="col-11 col-lg-5">
+                        <video class="w-100" controls>
+                            <source src="Resources/MACKLEMORE_FEAT_SKYLAR_GREY_-_GLORIOUS.mp4">
+                        Your browser does not support the video tag. 
+                        </video>
+                        <a href="https://youtu.be/7OrLroFa0AI?si=lOrUrJRn-ttNqSpX" target="_blank" class="text-light">Macklemore ft Skylar Grey- Glorious</a>
+                        </div>
+                    </div>
             </section>
-            <section>
-                <hgroup>
-                    <h2>Football</h2>
-                    <p>It wouldn't be exaggerating if I say I've been watching football since I know myself. I used to watch a lot of football growing up by going to DSTV houses and watching with a bunch of grown men. My father would take me there before the game starts and then again get me back at the end. And I have a lot of memories in those houses and football in general. I also like to play football myself with my friends at school breaks and during summer. As habit of a fan I have a team that I support from all the major European Leagues and from my country league. Here are some of them.</p>
+            <section class="bg-dark text-light p-5 col-11 my-4 mx-auto">
+                <hgroup class="mb-2">
+                    <h2 class="text-decoration-underline">Football</h2>
+                    <p class="fw-semibold">It wouldn't be exaggerating if I say I've been watching football since I know myself. I used to watch a lot of football growing up by going to DSTV houses and watching with a bunch of grown men. My father would take me there before the game starts and then again get me back at the end. And I have a lot of memories in those houses and football in general. I also like to play football myself with my friends at school breaks and during summer. As habit of a fan I have a team that I support from all the major European Leagues and from my country league. Here are some of them.</p>
                 </hgroup>
-                <div id="teams">
-                    <div class="club">
-                        <img src="images/Manchester_United.png" alt="Manchester United Logo">
-                        <p>For me football means <a href="https://www.manutd.com/" target="_blank">Manchester United</a>. It runs through my blood and its something that stays with me till the end. Manchester United means everything to me I get very happy when it wins and very sad when it loses. From the good old days of watching Wayne Rooney (which by the way is my favorite player of all time, just love him), Paul Scholes, Ryan Giggs and the great Sir Alex Ferguson, I fell in love with the game because of man utd.</p>
-                        <div class="follow">
-                            <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="http://instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/ManUtd" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <div class="p-2 p-lg-5 row justify-content-evenly gap-3 bg-dark-subtle">
+                    <div class="bg-dark d-flex flex-column justify-content-between p-2 rounded text-center col-11 col-md-5 col-lg-3 gap-3">
+                        <img class="w-50 mx-auto" src="images/Manchester_United.png" alt="Manchester United Logo">
+                        <p>For me football means <a href="https://www.manutd.com/" target="_blank" class="text-light fw-semibold">Manchester United</a>. It runs through my blood and its something that stays with me till the end. Manchester United means everything to me I get very happy when it wins and very sad when it loses. From the good old days of watching Wayne Rooney (which by the way is my favorite player of all time, just love him), Paul Scholes, Ryan Giggs and the great Sir Alex Ferguson, I fell in love with the game because of man utd.</p>
+                        <div class="d-flex justify-content-around my-3 mx-auto col-11 fs-3">
+                            <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube text-light"></i></a>
+                            <a href="http://instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram text-light"></i></a>
+                            <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook-f text-light"></i></a>
+                            <a href="https://twitter.com/ManUtd" target="_blank"><i class="fa-brands fa-x-twitter text-light"></i></a>
                         </div>
                     </div>
-                    <div class="club">
-                        <img src="images/Barcelona.png" alt="FC Barcelona Logo">
-                        <p>As a pursuit of supporting clubs from the major leagues, my Spanish counterpart is <a href="https://www.fcbarcelona.com/en/" target="_blank">Barcelona</a>. I fall in love with Barca's Tiki Taka with Messi, Inestia and Xavi in the middle of the pitch. Their ball was beautiful and unstoppable and it still is. They are one the few teams that play by holding the ball and playing an attractive game.</p>
-                        <div class="follow">
-                            <a href="https://www.youtube.com/user/fcbarcelona" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/fcbarcelona/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://es-es.facebook.com/fcbarcelona/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/FCBarcelona" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <div class="bg-dark d-flex flex-column justify-content-between p-2 rounded text-center col-11 col-md-5 col-lg-3 gap-3">
+                        <img class="w-50 mx-auto" src="images/Barcelona.png" alt="FC Barcelona Logo">
+                        <p>As a pursuit of supporting clubs from the major leagues, my Spanish counterpart is <a href="https://www.fcbarcelona.com/en/" target="_blank" class="text-light fw-semibold">Barcelona</a>. I fall in love with Barca's Tiki Taka with Messi, Inestia and Xavi in the middle of the pitch. Their ball was beautiful and unstoppable and it still is. They are one the few teams that play by holding the ball and playing an attractive game.</p>
+                        <div class="d-flex justify-content-around my-3 mx-auto col-11 fs-3">
+                            <a href="https://www.youtube.com/user/fcbarcelona" target="_blank"><i class="fa-brands fa-youtube text-light"></i></a>
+                            <a href="https://www.instagram.com/fcbarcelona/" target="_blank"><i class="fa-brands fa-instagram text-light"></i></a>
+                            <a href="https://es-es.facebook.com/fcbarcelona/" target="_blank"><i class="fa-brands fa-facebook-f text-light"></i></a>
+                            <a href="https://twitter.com/FCBarcelona" target="_blank"><i class="fa-brands fa-x-twitter text-light"></i></a>
                         </div>
                     </div>
-                    <div class="club">
-                        <img src="images/Bayern_Munich.png" alt="FC Bayern Munich Logo">
-                        <p>Of course there's got to be the German giants somewhere in here. Honestly I don't know how I got in to supporting <a href="https://fcbayern.com/en">Bayern Munich</a> but I guess in the first years I started watching football most of the teams that I support now were the dominants in their respective leagues. And Bayern were the German ones.</p>
-                        <div class="follow">
-                            <a href="https://www.youtube.com/fcbayern" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/fcbayern" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/FCBayernEN" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/fcbayernen" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <div class="bg-dark d-flex flex-column justify-content-between p-2 rounded text-center col-11 col-md-5 col-lg-3 gap-3">
+                        <img class="w-50 mx-auto" src="images/Bayern_Munich.png" alt="FC Bayern Munich Logo">
+                        <p>Of course there's got to be the German giants somewhere in here. Honestly I don't know how I got in to supporting <a href="https://fcbayern.com/en"  class="text-light fw-semibold" target="_blank">Bayern Munich</a> but I guess in the first years I started watching football most of the teams that I support now were the dominants in their respective leagues. And Bayern were the German ones.</p>
+                        <div class="d-flex justify-content-around my-3 mx-auto col-11 fs-3">
+                            <a href="https://www.youtube.com/fcbayern" target="_blank"><i class="fa-brands fa-youtube text-light"></i></a>
+                            <a href="https://www.instagram.com/fcbayern" target="_blank"><i class="fa-brands fa-instagram text-light"></i></a>
+                            <a href="https://www.facebook.com/FCBayernEN" target="_blank"><i class="fa-brands fa-facebook-f text-light"></i></a>
+                            <a href="https://twitter.com/fcbayernen" target="_blank"><i class="fa-brands fa-x-twitter text-light"></i></a>
                         </div>
                     </div>
-                    <div class="club">
-                        <img src="images/Inter_Milan.png" alt="Inter Milan Logo">
-                        <p>Like most of my teams were the giants in the beginning of the 2010s, <a href="https://www.inter.it/en">Inter Milan</a> was no different. They won the trebel (Serie A, UEFA Champions League and the Coppa Italia) in 2009-10 under Jose Mourinho and players like Eto'o and sneijder.</p>
-                        <div class="follow">
-                            <a href="https://www.youtube.com/user/INTER" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/inter/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/Inter/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/Inter_en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <div class="bg-dark d-flex flex-column justify-content-between p-2 rounded text-center col-11 col-md-5 col-lg-3 gap-3">
+                        <img class="w-50 mx-auto" src="images/Inter_Milan.png" alt="Inter Milan Logo">
+                        <p>Like most of my teams were the giants in the beginning of the 2010s, <a href="https://www.inter.it/en" target="_blank" class="text-light fw-semibold">Inter Milan</a> was no different. They won the trebel (Serie A, UEFA Champions League and the Coppa Italia) in 2009-10 under Jose Mourinho and players like Eto'o and sneijder.</p>
+                        <div class="d-flex justify-content-around my-3 mx-auto col-11 fs-3">
+                            <a href="https://www.youtube.com/user/INTER" target="_blank"><i class="fa-brands fa-youtube text-light"></i></a>
+                            <a href="https://www.instagram.com/inter/" target="_blank"><i class="fa-brands fa-instagram text-light"></i></a>
+                            <a href="https://www.facebook.com/Inter/" target="_blank"><i class="fa-brands fa-facebook-f text-light"></i></a>
+                            <a href="https://twitter.com/Inter_en" target="_blank"><i class="fa-brands fa-x-twitter text-light"></i></a>
                         </div>
                     </div>
-                    <div class="club">
-                        <img src="images/Saint_George.png" alt="Saint George S.C Logo">
-                        <p>Relax, I'm not just European football supporter, there is also one from my country Ethiopia. I am a <a href="https://saintgeorgefc.com/">Saint George (Kidus Giorgis)</a> fan, yeah I'm a 'Feresegna'. I used to love Adane Girma very much when I was a kid and I loved how he played the game.</p>
-                        <div class="follow">
-                            <a href="https://www.facebook.com/profile.php?id=100029264637273" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <div class="bg-dark d-flex flex-column justify-content-between p-2 rounded text-center col-11 col-md-5 col-lg-3 gap-3">
+                        <img class="w-50 mx-auto" src="images/Saint_George.png" alt="Saint George S.C Logo">
+                        <p>Relax, I'm not just European football supporter, there is also one from my country Ethiopia. I am a <a href="https://saintgeorgefc.com/" target="_blank"  class="text-light fw-semibold">Saint George (Kidus Giorgis)</a> fan, yeah I'm a 'Feresegna'. I used to love Adane Girma very much when I was a kid and I loved how he played the game.</p>
+                        <div class="d-flex justify-content-around my-3 mx-auto col-11 fs-3">
+                            <a href="https://www.facebook.com/profile.php?id=100029264637273" target="_blank"><i class="fa-brands fa-facebook-f text-light"></i></a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="movies">
-                <hgroup>
-                    <h2>Movies</h2>
+            <section class="bg-dark text-light p-5 col-11 my-4 mx-auto">
+                <hgroup class="mb-2">
+                    <h2 class="text-decoration-underline">Movies</h2>
                     <p>If I got long time to kill like during the summer or just quick lunch breaks I enjoy watching movies. I like the story movies tell and they way the make me immersed in them. I like mostly Comedy, Action, Adventure and Biographic movies. I enjoy single movies the most but also I like to see series movies here and there like especially sitcoms.</p> 
                 </hgroup>
-                <p>Here are the top 3 movies that I would see over and over again and still feel like it was the first time.</p>
-                <ul id="trailers">
-                    <li>
+                <p class="fw-semibold">Here are the top 3 movies that I would see over and over again and still feel like it was the first time.</p>
+                <ul class="list-unstyled row justify-content-evenly gap-4 mt-3 mx-auto mb-0 p-4 bg-dark-subtle">
+                    <li class="text-center bg-dark text-light p-3 d-flex flex-column justify-content-between rounded col-11 col-md-5 col-lg-3">
                         <hgroup>
-                            <h4><a href="https://www.imdb.com/title/tt1375670/" target="_blank">Grown Ups - 2013</a></h4>
+                            <h4><a href="https://www.imdb.com/title/tt1375670/" target="_blank" class="fw-semibold text-light">Grown Ups - 2013</a></h4>
                             <p>Five childhood friends take their families for a weekend trip to a lake house in their hometown, where they reunite to attend the funeral of their former high school basketball coach.</p>
                         </hgroup>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/e01NVCveGkg?si=DWn4fxngRN4_5ffv" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/e01NVCveGkg?si=DWn4fxngRN4_5ffv" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
-                    <li>
+                    <li class="text-center bg-dark text-light p-3 d-flex flex-column justify-content-between rounded col-11 col-md-5 col-lg-3">
                         <hgroup>
-                            <h4><a href="https://www.imdb.com/title/tt0368891/" target="_blank">National Treasure - 2004</a></h4>
+                            <h4><a href="https://www.imdb.com/title/tt0368891/" target="_blank" class="fw-semibold text-light">National Treasure - 2004</a></h4>
                             <p>Adventure/Action movie about a treasure hunter who is in hot pursuit of a mythical treasure that has been passed down for centuries, while his employer turned enemy is onto the same path that he is on.</p>
                         </hgroup>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vqUPxNT8io4?si=7QM9PVif_JUgceNQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/vqUPxNT8io4?si=7QM9PVif_JUgceNQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
-                    <li>
+                    <li class="text-center bg-dark text-light p-3 d-flex flex-column justify-content-between rounded col-11 col-md-5 col-lg-3">
                         <hgroup>
-                            <h4><a href="https://www.imdb.com/title/tt0108778/" target="_blank">Friends 1994-2004 (Tv-Series)</a></h4>
+                            <h4><a href="https://www.imdb.com/title/tt0108778/" target="_blank" class="fw-semibold text-light">Friends 1994-2004 (Tv-Series)</a></h4>
                             <p>Following the lives of six reckless adults living in Manhattan, as they indulge in adventures which make their lives both troublesome and happening.</p>
                         </hgroup>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IEEbUzffzrk?si=1o29ZYcNVRp8Rzli" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/IEEbUzffzrk?si=1o29ZYcNVRp8Rzli" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
                 </ul>
             </section>
-            <section>
-                <hgroup>
-                    <h2>Books</h2>
+            <section class="bg-dark text-light p-5 col-11 my-4 mx-auto">
+                <hgroup class="mb-2">
+                    <h2 class="text-decoration-underline">Books</h2>
                     <p>Last but not the least I also enjoy reading books whenever possible. Relative to the others I am lazy at reading books but still if I get the time I like reading books. What I like about is unlike movies, which form the images for the story in the video, while reading books I create my own characters, my own scenery and everything of the story is imagined and created in my mind. I like reading fictions the most like fantasies and adventures and also biographies which I learn from other successful people.</p>
                 </hgroup>
                 <p>Here are my top 3 books that I've read</p>
-                <ul>
-                    <li>
-                        <h4>Born a Crime: Stories from a South African Childhood - By <a href="https://en.wikipedia.org/wiki/Trevor_Noah">Trevor Noah</a></h4>
-                        <img src="images/Born_a_Crime.jpg" alt="Born a Crime's cover page">
+                <ul class="list-unstyled row justify-content-evenly gap-4 mt-3 mx-auto mb-0 p-4 bg-dark-subtle">
+                    <li class="text-center bg-dark text-light p-3 d-flex flex-column justify-content-between rounded col-11 col-md-5 col-lg-3">
+                        <h4 class="fs-5">Born a Crime: Stories from a South African Childhood - By <a href="https://en.wikipedia.org/wiki/Trevor_Noah" class="fw-semibold text-light">Trevor Noah</a></h4>
+                        <img class="w-100" src="images/Born_a_Crime.jpg" alt="Born a Crime's cover page">
                         <p>An autobiographical comedy book written by South African comedian Trevor Noah, published in 2016. The book focuses on Noah's childhood growing up in South Africa after he was born of an illegal interracial relationship during the apartheid era.</p>
-                        <a href="Resources/Trevor_Noah_-_Born_a_Crime.pdf">Read here</a>
+                        <a href="Resources/Trevor_Noah_-_Born_a_Crime.pdf" class="text-light fw-semibold">Read here</a>
                     </li>
-                    <li>
-                        <h4>If Tomorrow Comes - By <a href="https://en.wikipedia.org/wiki/Sidney_Sheldon">Sidney Sheldon</a></h4>
-                        <img src="images/If_tomorrow_comes.jpg" alt="If tomorrow comes' cover page">
+                    <li class="text-center bg-dark text-light p-3 d-flex flex-column justify-content-between rounded col-11 col-md-5 col-lg-3">
+                        <h4 class="fs-5">If Tomorrow Comes - By <a href="https://en.wikipedia.org/wiki/Sidney_Sheldon" class="fw-semibold text-light">Sidney Sheldon</a></h4>   
+                        <img class="w-100" src="images/If_tomorrow_comes.jpg" alt="If tomorrow comes' cover page">
                         <p>One of the first books I've read If Tomorrow Comes is a 1985 crime fiction novel by American author Sidney Sheldon. It is a story portraying an ordinary woman who is framed by the Mafia, her subsequent quest for vengeance towards them and her later life as a con artist. </p>
-                        <a href="Resources/Sidney_Sheldon_-_If_Tomorrow_Comes.pdf">Read here</a>
+                        <a href="Resources/Sidney_Sheldon_-_If_Tomorrow_Comes.pdf" class="text-light fw-semibold">Read here</a>
                     </li>
-                    <li>
-                        <h4>Fikir Eske Mekabr (Love to the Grave) - By <a href="https://en.wikipedia.org/wiki/Haddis_Alemayehu">Haddis Alemayehu</a></h4>
-                        <img src="images/Fikir_Eske_Mekabir.jpg" alt="Fikir Eske Mekabir's cover page">
+                    <li class="text-center bg-dark text-light p-3 d-flex flex-column justify-content-between rounded col-11 col-md-5 col-lg-3">
+                        <h4 class="fs-5">Fikir Eske Mekabr (Love to the Grave) - By <a href="https://en.wikipedia.org/wiki/Haddis_Alemayehu" class="fw-semibold text-light">Haddis Alemayehu</a></h4>
+                        <img class="w-100" src="images/Fikir_Eske_Mekabir.jpg" alt="Fikir Eske Mekabir's cover page">
                         <p>It is an Amharic novel by Haddis Alemayehu published in 1968. It is one of the best-known novels in Ethiopia and is considered a classic of Ethiopian literature.</p>
-                        <a href="Resources/Haddis_Alemayehu_-_Fikir_Eske_Mekabr.pdf">Read here</a>
+                        <a href="Resources/Haddis_Alemayehu_-_Fikir_Eske_Mekabr.pdf" class="text-light fw-semibold">Read here</a>
                     </li>
                 </ul>
             </section>
         </main>
-        <footer>
-            <div id="footer">
-                <nav id="sitemap">
-                    <ul class="lists">
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a href="Resume.html">Resume</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="Adventure.html">Adventure</a></li>
-                        <li><a href="Entertainments.html">Entertainments</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+        <footer class="d-flex flex-column bg-dark text-light text-center p-2 fs-5">
+            <div class="d-flex flex-column flex-md-row gap-4 justify-content-evenly align-items-center py-6">
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="Home.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="Resume.html" class="text-light text-decoration-none">Resume</a></li>
+                        <li><a href="Projects.html" class="text-light text-decoration-none">Projects</a></li>
+                        <li><a href="Adventure.html" class="text-light text-decoration-none">Adventure</a></li>
+                        <li><a href="Entertainments.html" class="text-light text-decoration-none">Entertainments</a></li>
+                        <li><a href="Contact.html" class="text-light text-decoration-none">Contact</a></li>
                     </ul>
                 </nav>
-                <address id="socials">
+                <address>
                     <p>How do you prefer to take coffee?</p>
-                    <ul class="lists">
-                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank">Facebook</a></li>
-                        <li><a href="https://t.me/Abe16s" target="_blank">Telegram</a></li>
-                        <li><a href="https://www.instagram.com/abe16s/" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank">LinkedIn</a></li>
-                        <li><a href="mailto:abenezerseifu123@gmail.com">Send a mail: abenezerseifu123@gmail.com</a></li>
-                        <li><a href="tel:0936120470" target="_blank">Call: +251936120470</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank" class="text-light text-decoration-none">Facebook</a></li>
+                        <li><a href="https://t.me/Abe16s" target="_blank" class="text-light text-decoration-none">Telegram</a></li>
+                        <li><a href="https://www.instagram.com/abe16s/" target="_blank" class="text-light text-decoration-none">Instagram</a></li>
+                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank" class="text-light text-decoration-none">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank" class="text-light text-decoration-none">LinkedIn</a></li>
+                        <li><a href="mailto:abenezerseifu123@gmail.com" class="text-light text-decoration-none">Send a mail: abenezerseifu123@gmail.com</a></li>
+                        <li><a href="tel:0936120470" target="_blank" class="text-light text-decoration-none">Call: +251936120470</a></li>
                     </ul>
                 </address>
             </div>
             <hr>
-            <div id="copyright">
-                <img src="images/AB_Logo.jpg" alt="AB Logo" class="logo">
-                <p>Copyright ©2023 All rights reserved | Abenezer Seifu </p>
+            <div class="d-flex gap-4 align-items-center">
+                <img src="images/AB_Logo.jpg" alt="AB Logo" class="col-1 rounded-circle">
+                <p class="mb-0">Copyright ©2023 All rights reserved | Abenezer Seifu </p>
             </div>
         </footer>
     </body>

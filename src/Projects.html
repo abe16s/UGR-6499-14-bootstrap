@@ -4,87 +4,93 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projects</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Resume.html">Resume</a></li>
-                    <li><a href="Projects.html" class="current">Projects</a></li>
+            <nav class="border-bottom border-3 border-light d-flex justify-content-center px-5 flex-column flex-lg-row bg-dark text-light py-3 position-relative row-gap-3">
+                <ul class="list-unstyled align-items-center justify-content-around flex-column flex-lg-row row-gap-3 d-lg-flex d-none w-100 navbar-menu mb-0">
+                    <li><a href="Home.html" class="text-light fs-5 text-decoration-none">Home</a></li>
+                    <li><a href="Resume.html" class="text-light fs-5 text-decoration-none">Resume</a></li>
+                    <li><a href="Projects.html" class="text-light fs-5">Projects</a></li>
                 </ul>
-                <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo" class="logo"></a>  
-                <ul >
-                    <li><a href="Adventure.html">Adventure</a></li>
-                    <li><a href="Entertainments.html">Entertainments</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>       
+                <div class="d-flex justify-content-between align-items-center order-first col-lg-1 order-lg-0">
+                    <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo" class="col-lg-12 col-2 rounded-circle"></a>  
+                    <i class="fa-solid fa-bars text-light fs-4 d-lg-none" id="navbar-burger"></i>
+                    <i class="fa-solid fa-x text-light fs-4 d-lg-none d-none" id="navbar-burger--close"></i>
+                </div>
+                <ul class="list-unstyled align-items-center justify-content-around flex-column flex-lg-row row-gap-3 d-lg-flex d-none w-100 navbar-menu mb-0">
+                    <li><a href="Adventure.html" class="text-light fs-5 text-decoration-none">Adventure</a></li>
+                    <li><a href="Entertainments.html" class="text-light fs-5 text-decoration-none">Entertainments</a></li>
+                    <li><a href="Contact.html" class="text-light fs-5 text-decoration-none">Contact</a></li>
+                </ul>    
+            </nav>     
+            <script src="js/navbar.js"></script>    
         </header>
-        <hr>
         <main>
-            <hgroup id="about" class="parts">
+            <hgroup class="d-flex flex-column bg-dark text-white position-relative px-5 justify-content-center p-5">
                 <h1>Projects</h1>
-                <p>I have done a lot of projects through out my learning process as a software engineer. Most of the projects are simple static web pages made through my learning path of Responsive Web Design course on <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>. There is also one project that I made with my friend in summer of 2023 as a pet project, made out of passion.</p>
+                <p>I have done a lot of projects through out my learning process as a software engineer. Most of the projects are simple static web pages made through my learning path of Responsive Web Design course on <a href="https://www.freecodecamp.org/" target="_blank" class="text-light fw-semibold">freeCodeCamp</a>. There is also one project that I made with my friend in summer of 2023 as a pet project, made out of passion.</p>
             </hgroup>
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project">
-                    <a href="Resources/web_pages/Tribute_Page.html" target="_blank"><img src="images/Tribute_Page.png" alt="Project 1: Tribute page for Dr. Aklilu Lemma"></a>
+            <section class="p-5 my-2 mx-auto px-2 px-md-5 gap-4 text-justify row justify-content-center">
+                <h2 class="text-decoration-underline w-100">Projects</h2>
+                <div class="col-10 col-md-5 col-lg-3 bg-dark text-light rounded p-3">
+                    <a href="Resources/web_pages/Tribute_Page.html" target="_blank"><img src="images/Tribute_Page.png" alt="Project 1: Tribute page for Dr. Aklilu Lemma" class="w-100"></a>
                     <p>One of the required projects in the course of freeCodeCamp. This web page is a tribute to one of Ethiopia's most renowned biologist, Dr Aklilu Lemma and his life works.</p>
                 </div>
-                <div class="project">
-                    <img src="images/Idir_Home_Page.png" alt="Project 2: Local Idir managing app">
+                <div class="col-10 col-md-5 col-lg-3 bg-dark text-light rounded p-3">
+                    <a href="https://github.com/abe16s/IDIR" target="_blank"><img src="images/Idir_Home_Page.png" alt="Project 2: Local Idir managing app" class="w-100"></a>
                     <p>A pet project with my friend through the summer of 2023 about an Idir managing application that helps facilitate the management of Idir members, monthly payments and other financial workings of Idir. This project was made with java swing that we took on OOP course at 2<sup>nd</sup> year 2<sup>nd</sup> semester.</p>
-                    <aside>"Idir" is a local social system practiced in Ethiopia which is the gathering of people and helping each other through happy and bad times.</aside>
+                    <aside class="fst-italic">"Idir" is a local social system practiced in Ethiopia which is the gathering of people and helping each other through happy and bad times.</aside>
                 </div>
-                <div class="project">
-                    <a href="Resources/web_pages/cafe_menu.html" target="_blank"><img src="images/Cafe_Menu.png" alt="Project 3: A sample cafe menu"></a>
+                <div class="col-10 col-md-5 col-lg-3 bg-dark text-light rounded p-3">
+                    <a href="Resources/web_pages/cafe_menu.html" target="_blank"><img src="images/Cafe_Menu.png" alt="Project 3: A sample cafe menu" class="w-100"></a>
                     <p>An example project on the freeCodeCamp course. This web page is a menu for a hypothetical cafe.</p>
                 </div>
-                <div class="project">
-                    <a href="Resources/web_pages/technical_documentation.html" target="_blank"><img src="images/Technical_Documentation.png" alt="Project 4: A technical documentation"></a>
+                <div class="col-10 col-md-5 col-lg-3 bg-dark text-light rounded p-3">
+                    <a href="Resources/web_pages/technical_documentation.html" target="_blank"><img src="images/Technical_Documentation.png" alt="Project 4: A technical documentation" class="w-100"></a>
                     <p>One of the required projects of the freeCodeCamp course. This one is a responsive technical documentation page which I made with project proposal of my course project for the course Fundamental of Software Engineering</p>
                 </div>
-                <div class="project">
-                    <a href="Resources/web_pages/bar_chart.html" target="_blank"><img src="images/Bar_chart.png" alt="Project 5: A simple bar chart"></a>
+                <div class="col-10 col-md-5 col-lg-3 bg-dark text-light rounded p-3">
+                    <a href="Resources/web_pages/bar_chart.html" target="_blank"><img src="images/Bar_chart.png" alt="Project 5: A simple bar chart" class="w-100"></a>
                     <p>An example project on the freeCodeCamp course. This web page is just a simple bar chart example</p>
                 </div>
-                <div class="project">
-                    <a href="Resources/web_pages/survey_form.html" target="_blank"><img src="images/Survey_form.png" alt="Project 6: A sample survey"></a>   
+                <div class="col-10 col-md-5 col-lg-3 bg-dark text-light rounded p-3">
+                    <a href="Resources/web_pages/survey_form.html" target="_blank"><img src="images/Survey_form.png" alt="Project 6: A sample survey" class="w-100"></a>   
                     <p>This one is also one of the required projects of the freeCodeCamp course. This one is a sample survey to practice the form structure in html.</p>
                 </div>
             </section>
         </main>
-        <footer>
-            <div id="footer">
-                <nav id="sitemap">
-                    <ul class="lists">
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a href="Resume.html">Resume</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="Adventure.html">Adventure</a></li>
-                        <li><a href="Entertainments.html">Entertainments</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+        <footer class="d-flex flex-column bg-dark text-light text-center p-2 fs-5">
+            <div class="d-flex flex-column flex-md-row gap-4 justify-content-evenly align-items-center py-6">
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="Home.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="Resume.html" class="text-light text-decoration-none">Resume</a></li>
+                        <li><a href="Projects.html" class="text-light text-decoration-none">Projects</a></li>
+                        <li><a href="Adventure.html" class="text-light text-decoration-none">Adventure</a></li>
+                        <li><a href="Entertainments.html" class="text-light text-decoration-none">Entertainments</a></li>
+                        <li><a href="Contact.html" class="text-light text-decoration-none">Contact</a></li>
                     </ul>
                 </nav>
-                <address id="socials">
+                <address>
                     <p>How do you prefer to take coffee?</p>
-                    <ul class="lists">
-                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank">Facebook</a></li>
-                        <li><a href="https://t.me/Abe16s" target="_blank">Telegram</a></li>
-                        <li><a href="https://www.instagram.com/abe16s/" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank">LinkedIn</a></li>
-                        <li><a href="mailto:abenezerseifu123@gmail.com">Send a mail: abenezerseifu123@gmail.com</a></li>
-                        <li><a href="tel:0936120470" target="_blank">Call: +251936120470</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank" class="text-light text-decoration-none">Facebook</a></li>
+                        <li><a href="https://t.me/Abe16s" target="_blank" class="text-light text-decoration-none">Telegram</a></li>
+                        <li><a href="https://www.instagram.com/abe16s/" target="_blank" class="text-light text-decoration-none">Instagram</a></li>
+                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank" class="text-light text-decoration-none">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank" class="text-light text-decoration-none">LinkedIn</a></li>
+                        <li><a href="mailto:abenezerseifu123@gmail.com" class="text-light text-decoration-none">Send a mail: abenezerseifu123@gmail.com</a></li>
+                        <li><a href="tel:0936120470" target="_blank" class="text-light text-decoration-none">Call: +251936120470</a></li>
                     </ul>
                 </address>
             </div>
             <hr>
-            <div id="copyright">
-                <img src="images/AB_Logo.jpg" alt="AB Logo" class="logo">
-                <p>Copyright ©2023 All rights reserved | Abenezer Seifu </p>
+            <div class="d-flex gap-4 align-items-center">
+                <img src="images/AB_Logo.jpg" alt="AB Logo" class="col-1 rounded-circle">
+                <p class="mb-0">Copyright ©2023 All rights reserved | Abenezer Seifu </p>
             </div>
         </footer>
     </body>

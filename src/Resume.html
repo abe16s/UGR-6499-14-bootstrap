@@ -3,193 +3,197 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <title>Resume</title>
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Resume.html" class="current">Resume</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
+            <nav class="border-bottom border-3 border-light d-flex justify-content-center px-5 flex-column flex-lg-row bg-dark text-light py-3 position-relative row-gap-3">
+                <ul class="list-unstyled align-items-center justify-content-around flex-column flex-lg-row row-gap-3 d-lg-flex d-none w-100 navbar-menu mb-0">
+                    <li><a href="Home.html" class="text-light fs-5 text-decoration-none">Home</a></li>
+                    <li><a href="Resume.html" class="text-light fs-5">Resume</a></li>
+                    <li><a href="Projects.html" class="text-light fs-5 text-decoration-none">Projects</a></li>
                 </ul>
-                <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo" class="logo"></a>  
-                <ul >
-                    <li><a href="Adventure.html">Adventure</a></li>
-                    <li><a href="Entertainments.html">Entertainments</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>       
+                <div class="d-flex justify-content-between align-items-center order-first col-lg-1 order-lg-0">
+                    <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo" class="col-lg-12 col-2 rounded-circle"></a>  
+                    <i class="fa-solid fa-bars text-light fs-4 d-lg-none" id="navbar-burger"></i>
+                    <i class="fa-solid fa-x text-light fs-4 d-lg-none d-none" id="navbar-burger--close"></i>
+                </div>
+                <ul class="list-unstyled align-items-center justify-content-around flex-column flex-lg-row row-gap-3 d-lg-flex d-none w-100 navbar-menu mb-0">
+                    <li><a href="Adventure.html" class="text-light fs-5 text-decoration-none">Adventure</a></li>
+                    <li><a href="Entertainments.html" class="text-light fs-5 text-decoration-none">Entertainments</a></li>
+                    <li><a href="Contact.html" class="text-light fs-5 text-decoration-none">Contact</a></li>
+                </ul>    
+            </nav>     
+            <script src="js/navbar.js"></script>    
         </header>
-        <hr>
         <main>
-            <section id="top">
-                <img src="images/Profile_pic_of_Abenezer.png" alt="Photo of Abenezer" id="profile_pic">
+            <section class="d-flex bg-dark text-white position-relative align-items-center px-5 justify-content-evenly p-5 p-md-2 gap-lg-5">
+                <img src="images/Profile_pic_of_Abenezer.png" alt="Photo of Abenezer" class="d-none d-md-block">
                 <hgroup>
                     <h1>ABENEZER<br>SEIFU<br>DULA</h1>
                     <p>Software Engineering Student</p>
                 </hgroup>
             </section>
-            <section id="about">
+            <section class="p-5 bg-dark text-light mt-5 col-10 mx-auto">
                 <hgroup>
-                    <h2>About Me</h2>
+                    <h2 class="text-decoration-underline">About Me</h2>
                     <p>An ambitious and passionate Software Engineering student, learning new things every day. Born and raised in the eastern part of Ethiopia, Harar and currently enrolled at Addis Ababa University as Software Engineering student. Taking risks and more steps to cope up with the fast growing, changing and interesting tech sector.</p>
                 </hgroup>
             </section>
-            <section id="education">
-                <h2>Education</h2>
-                <div class="allschools">
-                    <div class="school">
-                        <a href="https://6475e8f9abc8a.site123.me/" target="_blank"><img src="images/Hi-Tech_Academy_Logo.png" alt="Hi-Tech Academy Logo"></a>   
-                        <h4><a href="https://6475e8f9abc8a.site123.me/" target="_blank">Hi-Tech Academy</a>, Grade 1-12</h4>
-                        <p>Oct, 2008 - Nov, 2021</p>
+            <section class="p-5 bg-dark text-light mt-5 col-10 mx-auto">
+                <h2 class="text-decoration-underline">Education</h2>
+                <div class="d-flex flex-column align-items-center flex-md-row column-gap-3">
+                    <div class="text-center my-2 w-md-25 fs-6">
+                        <a href="https://6475e8f9abc8a.site123.me/" target="_blank" class="d-block mx-auto"><img src="images/Hi-Tech_Academy_Logo.png" alt="Hi-Tech Academy Logo" class="w-100"></a>   
+                        <h4 class="fs-6 mb-0"><a href="https://6475e8f9abc8a.site123.me/" target="_blank">Hi-Tech Academy</a>, Grade 1-12</h4>
+                        <p class="mb-0">Oct, 2008 - Nov, 2021</p>
                         <address>Harar, Ethiopia</address>
                     </div>
-                    <p>Finished each grade with great score, average and class rank of no higher than 3rd, mostly ranked 1st. Had a good relationship with classmates. Helped them through their difficulties and digest the things we learned from teachers after school and around class breaks. Graduated high school by scoring 634 out of 700 at Ethiopian Higher Education Entrance Certificate Examination in 2021.</p>    
+                    <p class="w-md-75">Finished each grade with great score, average and class rank of no higher than 3rd, mostly ranked 1st. Had a good relationship with classmates. Helped them through their difficulties and digest the things we learned from teachers after school and around class breaks. Graduated high school by scoring 634 out of 700 at Ethiopian Higher Education Entrance Certificate Examination in 2021.</p>    
                 </div>
-                <div class="allschools reverse">
-                    <div class="school">
-                        <a href="http://www.aau.edu.et/" target="_blank"><img src="images/Addis_Ababa_University_logo.png" alt="Addis Ababa University Logo"></a>   
-                        <h4><a href="http://www.aau.edu.et/" target="_blank">Addis Ababa University</a>, Software Engineering (BSc.)</h4>
-                        <p>Mar, 2022 - Present</p>    
+                <div class="d-flex flex-column align-items-center flex-md-row column-gap-3 flex-lg-row-reverse">
+                    <div class="text-center my-2 w-md-25 fs-6">
+                        <a href="http://www.aau.edu.et/" target="_blank" class="d-block mx-auto"><img src="images/Addis_Ababa_University_logo.png" alt="Addis Ababa University Logo" class="w-100"></a>   
+                        <h4 class="fs-6 mb-0"><a href="http://www.aau.edu.et/" target="_blank">Addis Ababa University</a>, Software Engineering (BSc.)</h4>
+                        <p class="mb-0">Mar, 2022 - Present</p>    
                         <address>Addis Ababa, Ethiopia</address>
                     </div>
                     <p>Currently a 3rd year, studying Software Engineering with a CGPA of 4.00. Continuing my highschool academic success, here also at AAU I am achieving good success academically and also participating in extra curriculum activities like clubs in campus.</p>
                 </div>
             </section>
-            <section id="experience">
-                <h2>Experience</h2>
-                <div class="exp">
+            <section class="p-5 bg-dark text-light mt-5 col-10 mx-auto">
+                <h2 class="text-decoration-underline">Experience</h2>
+                <div class="rounded bg-light text-dark p-3 mt-4">
                     <h4>Volunteering Tutor, Hi-Tech Academy<br>Jun, 2023 - Aug 2023</h4>
                     <p>A two month summer volunteering tutor about introduction to programming (Python) to interested high school students who aspire to be software engineers at my alma mater Hi-Tech Academy.</p>
                 </div>
-                <div class="exp">
+                <div class="rounded bg-light text-dark p-3 mt-4">
                     <h4>A2SV community education<br>May, 2023 - Present</h4>
-                    <p>Learning Data Structure and Algorithms at A2SV community division 2 from May-Aug 2023 & at division 1 from Aug 2023 - Oct 2023. And currently promoted to the in-person education of the A2SV program as generation 5.</p>
+                    <p>Learning Data Structure and Algorithms at <a href="https://a2sv.org/" target="_blank">A2SV</a> community division 2 from May-Aug 2023 & at division 1 from Aug 2023 - Oct 2023. And currently promoted to the in-person education of the A2SV program as generation 5.</p>
                 </div>
-                <div class="exp">
+                <div class="rounded bg-light text-dark p-3 mt-4 fst-italic">
                     <h4>A project about local Idir managing app</h4>
                     <p>I have been working on a pet project with my friend through the summer of 2023 about an Idir managing application that helps facilitate the management of Idir members, monthly payments and other financial workings of Idir.</p>
                     <aside>"Idir" is a local social system practiced in Ethiopia which is the gathering of people and helping each other through happy and bad times.</aside>
                 </div>
             </section>
-            <section>
-                <h2>Skills</h2>
-                <div id="skills">
-                    <div>
-                        <h4>Python</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent python">
+            <section class="p-5 bg-dark text-light mt-5 col-10 mx-auto">
+                <h2 class="text-decoration-underline">Skills</h2>
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">Python</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-11">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Java</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent java">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">Java</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-9">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>SQL & MySQL</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent sql">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">SQL & MySQL</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-8">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Git & GitHub</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent git">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">Git & GitHub</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-7">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>HTML & CSS</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent html">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">HTML & CSS</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-9">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Networking and Packet Tracer</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent networking">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">Networking and Packet Tracer</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-7">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Creativity</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent creativity">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">Creativity</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-11">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Critical Thinking</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent critical">    
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">Critical Thinking</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-10">    
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Communication</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent communication">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">Communication</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-10">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Team Work</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent teamwork">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">Team Work</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-10">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Leadership</h4>
-                        <div class="skill_container">
-                            <div class="skill_percent leadership">
+                    <div class="col-10 col-md-5 col-lg-3">
+                        <h4 class="fs-6">Leadership</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar col-9">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="document">
-                <h4>You can check my resume here</h4>
-                <a href="Resources/Abenezer_Seifu_CV.pdf" class="cv">Preview</a>
-                <a href="Resources/Abenezer_Seifu_CV.pdf" download="Abenezer Seifu's CV" class="cv">Download</a>
+            <div class="col-6 col-md-3 py-3 my-4 mx-auto bg-dark text-center rounded">
+                <a href="Resources/Abenezer_Seifu_CV.pdf" download="Abenezer Seifu's CV" class="text-light text-decoration-none fw-bold">Download Resume</a>
             </div>
         </main>
-        <footer>
-            <div id="footer">
-                <nav id="sitemap">
-                    <ul class="lists">
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a href="Resume.html">Resume</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="Adventure.html">Adventure</a></li>
-                        <li><a href="Entertainments.html">Entertainments</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+        <footer class="d-flex flex-column bg-dark text-light text-center p-2 fs-5">
+            <div class="d-flex flex-column flex-md-row gap-4 justify-content-evenly align-items-center py-6">
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="Home.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="Resume.html" class="text-light text-decoration-none">Resume</a></li>
+                        <li><a href="Projects.html" class="text-light text-decoration-none">Projects</a></li>
+                        <li><a href="Adventure.html" class="text-light text-decoration-none">Adventure</a></li>
+                        <li><a href="Entertainments.html" class="text-light text-decoration-none">Entertainments</a></li>
+                        <li><a href="Contact.html" class="text-light text-decoration-none">Contact</a></li>
                     </ul>
                 </nav>
-                <address id="socials">
+                <address>
                     <p>How do you prefer to take coffee?</p>
-                    <ul class="lists">
-                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank">Facebook</a></li>
-                        <li><a href="https://t.me/Abe16s" target="_blank">Telegram</a></li>
-                        <li><a href="https://www.instagram.com/abe16s/" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank">LinkedIn</a></li>
-                        <li><a href="mailto:abenezerseifu123@gmail.com">Send a mail: abenezerseifu123@gmail.com</a></li>
-                        <li><a href="tel:0936120470" target="_blank">Call: +251936120470</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank" class="text-light text-decoration-none">Facebook</a></li>
+                        <li><a href="https://t.me/Abe16s" target="_blank" class="text-light text-decoration-none">Telegram</a></li>
+                        <li><a href="https://www.instagram.com/abe16s/" target="_blank" class="text-light text-decoration-none">Instagram</a></li>
+                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank" class="text-light text-decoration-none">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank" class="text-light text-decoration-none">LinkedIn</a></li>
+                        <li><a href="mailto:abenezerseifu123@gmail.com" class="text-light text-decoration-none">Send a mail: abenezerseifu123@gmail.com</a></li>
+                        <li><a href="tel:0936120470" target="_blank" class="text-light text-decoration-none">Call: +251936120470</a></li>
                     </ul>
                 </address>
             </div>
             <hr>
-            <div id="copyright">
-                <img src="images/AB_Logo.jpg" alt="AB Logo" class="logo">
-                <p>Copyright ©2023 All rights reserved | Abenezer Seifu </p>
+            <div class="d-flex gap-4 align-items-center">
+                <img src="images/AB_Logo.jpg" alt="AB Logo" class="col-1 rounded-circle">
+                <p class="mb-0">Copyright ©2023 All rights reserved | Abenezer Seifu </p>
             </div>
         </footer>
     </body>
