@@ -73,48 +73,60 @@
                     <hr>
                 </section> 
             </div>
-            
-            <div class="col-8 mx-auto">
-                <div class="d-flex bg-dark text-light text-center px-2 py-5 overflow-auto my-5">
-                    <div class="col-12">
-                        <blockquote id="quote_1">
-                            "Whether you think you can or you think you can't, you're right." 
-                            <br>- Henry Ford
-                        </blockquote>
-                    </div>
-                    <div class="col-12">
-                        <blockquote id="quote_2">
-                            "The most important thing is to enjoy your life - to be happy - it's all that matters." 
-                            <br>- Steve Jobs
-                        </blockquote>
-                    </div>
-                    <div class="col-12">
-                        <blockquote id="quote_3">
-                            "The greatest glory in living lies not in never falling, but in rising every time we fall." 
-                            <br>- Nelson Mandela
-                        </blockquote>
-                    </div>
-                    <div class="col-12">
-                        <blockquote id="quote_4">
-                            "Nothing is impossible, the word itself says 'I'm possible'!"
-                            <br>- Audrey Hepburn
-                        </blockquote>
-                    </div>
-                    <div class="col-12">
-                        <blockquote id="quote_5">
-                            "Life is like riding a bicycle. To keep your balance you must keep moving."
-                            <br>- Albert Einstein
-                        </blockquote>
-                    </div>
-                    <div class="col-12">
-                        <blockquote id="quote_6">
-                            "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present."
-                            <br>- Bill Keane 
-                        </blockquote>
-                    </div>
+
+            <div id="quoteCarousel" class="carousel slid bg-dark text-light col-8 mx-auto p-4 my-5" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <blockquote id="quote_1">
+                        "Whether you think you can or you think you can't, you're right." 
+                        <br>- Henry Ford
+                    </blockquote>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <blockquote id="quote_2">
+                        "The most important thing is to enjoy your life - to be happy - it's all that matters." 
+                        <br>- Steve Jobs
+                    </blockquote>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <blockquote id="quote_3">
+                        "The greatest glory in living lies not in never falling, but in rising every time we fall." 
+                        <br>- Nelson Mandela
+                    </blockquote>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <blockquote id="quote_4">
+                        "Nothing is impossible, the word itself says 'I'm possible'!"
+                        <br>- Audrey Hepburn
+                    </blockquote>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <blockquote id="quote_5">
+                        "Life is like riding a bicycle. To keep your balance you must keep moving."
+                        <br>- Albert Einstein
+                    </blockquote>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <blockquote id="quote_6">
+                        "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present."
+                        <br>- Bill Keane 
+                    </blockquote>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#quoteCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+              
+
+
             <script src="js/Home_Quotes.js"></script>
+            <script src="js/bootstrap.bundle.js"></script>
         </main>
         <footer class="d-flex flex-column bg-dark text-light text-center p-2 fs-5">
             <div class="d-flex flex-column flex-md-row gap-4 justify-content-evenly align-items-center py-6">
